@@ -1,13 +1,14 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="page">
+
+<view>
+  <image mode="aspectFit" src='/images/bar.jpg'></image>
+</view>
+  <view>
+    <button class="weui-btn btn1"  hover-class="btn1-hover-class" bindtap='onClick_connect'>当Tensorflow遇上小程序</button>
+    <button class="weui-btn btn2"  hover-class="btn2-hover-class" bindtap='onClick_Pose'>人物姿态识别</button>
+    <button class="weui-btn btn2"  bindtap='onClick_Thing'>物体识别</button>
+    <button class="weui-btn btn3"  hover-class="btn2-hover-class" bindtap='onClick_Today'>Model Today</button>
+   
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+
 </view>

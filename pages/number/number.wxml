@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <camera
+    device-position='back'
+    flash='off'
+    binderror='error'
+    style='width: 200px; height: 200px;'
+    frame-size='small'
+  ></camera>
+  <text class='result'>ML识别结果: {{result}}</text>
+</view>

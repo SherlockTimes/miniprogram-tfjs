@@ -76,20 +76,5 @@ Page({
     canvas.lineWidth = 2
     canvas.strokeStyle = 'aqua'
     canvas.stroke()
-  },
-  onClick_Pose: function() {
-    wx.navigateTo({
-      url: '/pages/pose/pose',
-    })
-  },
-  onClick_Today: function() {
-    wx.navigateTo({
-      url: '/pages/number/number',
-    })
-  },
-  onClick_Thing: function() {
-    wx.navigateTo({
-      url: '../pages/basic/mobilenet/index',
-    })
-  },
+  }
 })
